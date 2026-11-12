@@ -179,39 +179,37 @@
       const location = document.getElementById('location').value;
       const date = dateInput.value;
       const time = document.getElementById('time').value;
-      const notice = document.getElementById('searchNotice');
-      notice.textContent = `Search ready for ${location} on ${date} at ${time}. Connect a parking availability system to show live spaces and reservations.`;
-      notice.classList.add('show');
-      notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    });
 
-    const parking_place = document.querySelector(".search-button");
-    parking_place.addEventListener("click", function() {
-      const location = document.getElementById('location').value;
-      const date = dateInput.value;
-      const time = document.getElementById('time').value;
 
-      
       // console.log(location)
       if (location === "Boys Studio - 12") { 
-        window.location.href = "file:///c%3A/Users/Vaibhav/OneDrive/Documents/Codes/campus%20parking/pages/BH_12.html"
+        window.location.href = "pages/BH_12.html"
+
       }
       else if (location === "Civil Engineering") {
-        window.location.href = "file:///c%3A/Users/Vaibhav/OneDrive/Documents/Codes/campus%20parking/pages/Civil_Engineering.html"
+        window.location.href = "pages/Civil_Engineering.html"
       }
       else if (location === "Boys Hostel - 3") {
-        window.location.href = "file:///c%3A/Users/Vaibhav/OneDrive/Documents/Codes/campus%20parking/pages/BH_3.html"
+        window.location.href = "pages/BH_3.html"
       }
       else if (location === "Archetecture Building") {
-        window.location.href = "file:///c%3A/Users/Vaibhav/OneDrive/Documents/Codes/campus%20parking/pages/Architecture_Building.html"
+        window.location.href = "pages/Archetecture_building.html"
       }
       else if (location === "Admission block") {
-        window.location.href = "file:///c%3A/Users/Vaibhav/OneDrive/Documents/Codes/campus%20parking/pages/Admission_block.html"
+        window.location.href = "pages/Admission_block.html"
       }
       else if (location === "Boys Studio - 11") {
-        window.location.href = "file:///c%3A/Users/Vaibhav/OneDrive/Documents/Codes/campus%20parking/pages/BH_11.html"
+        window.location.href = "pages/BH_11.html"
       }
     });
+      // const notice = document.getElementById('searchNotice');
+      // notice.textContent = `Search ready for ${location} on ${date} at ${time}. Connect a parking availability system to show live spaces and reservations.`;
+      // notice.classList.add('show');
+      // notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // });
+
+    // const parking_place = document.querySelector(".search-button");
+    // parking_place.addEventListener("click", function() {
   </script>
 </body>
 </html>
